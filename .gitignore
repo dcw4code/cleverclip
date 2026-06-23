@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# 虚拟环境
+venv/
+.venv/
+env/
+
+# 配置文件（含 API Key，勿提交）
+config.yaml
+
+# 临时文件（抽帧图片、中间产物）
+temp/
+
+# 输出视频
+output/
+
+# 源视频（体积大，勿提交）
+source_clips/*.mp4
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db

@@ -1,0 +1,1642 @@
+[
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 0.0,
+    "description": "几只粉色火烈鸟站在户外围栏区域内，背景是建筑物和树木。",
+    "objects": [
+      "火烈鸟",
+      "围栏",
+      "树木",
+      "建筑物",
+      "地面"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 1.0,
+    "description": "画面中出现了一个具有透明效果的叠加层，展示了一名女性站在火烈鸟中间的场景，背景是园林建筑。",
+    "objects": [
+      "火烈鸟",
+      "建筑物",
+      "红地毯",
+      "围栏"
+    ],
+    "people": [
+      "一名穿着米色长风衣、黑色内搭和浅色靴子的女性，正在面对镜头微笑。"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 2.0,
+    "description": "画面内容与上一帧基本一致，女性站在几只火烈鸟中间，其中一只火烈鸟靠近她的身侧。",
+    "objects": [
+      "火烈鸟",
+      "建筑物",
+      "红地毯",
+      "围栏"
+    ],
+    "people": [
+      "一名穿着米色长风衣、黑色内搭和浅色靴子的女性，正在面对镜头微笑。"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 3.0,
+    "description": "女性继续站在火烈鸟中间，画面构图与前几帧高度相似。",
+    "objects": [
+      "火烈鸟",
+      "建筑物",
+      "红地毯",
+      "围栏"
+    ],
+    "people": [
+      "一名穿着米色长风衣、黑色内搭和浅色靴子的女性，正在面对镜头微笑。"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 4.0,
+    "description": "女性站在火烈鸟中间的静止画面，火烈鸟散布在她的周围，地面铺有红地毯。",
+    "objects": [
+      "火烈鸟",
+      "建筑物",
+      "红地毯",
+      "围栏"
+    ],
+    "people": [
+      "一名穿着米色长风衣、黑色内搭和浅色靴子的女性，正在面对镜头微笑。"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 5.0,
+    "description": "一只红色的金刚鹦鹉站在木制的支架上，背景是室外的围栏和一些车辆。",
+    "objects": [
+      "金刚鹦鹉",
+      "木制支架",
+      "围栏",
+      "车辆",
+      "植被"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 6.0,
+    "description": "一只陆龟在铺满木屑的地面上缓慢爬行，旁边是白色的墙壁。",
+    "objects": [
+      "陆龟",
+      "木屑",
+      "墙壁",
+      "排水管"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 7.0,
+    "description": "几只小鹿在铺满木屑的室外区域活动，背景有建筑和围栏。",
+    "objects": [
+      "小鹿",
+      "木屑",
+      "围栏",
+      "建筑",
+      "玻璃窗"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 8.0,
+    "description": "几只小鹿在木屑地面上站立或走动，视角与前一帧相似。",
+    "objects": [
+      "小鹿",
+      "木屑",
+      "围栏",
+      "建筑",
+      "玻璃窗"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 9.0,
+    "description": "小鹿在木屑区域继续活动，其中一只小鹿正面向镜头。",
+    "objects": [
+      "小鹿",
+      "木屑",
+      "围栏",
+      "建筑",
+      "玻璃窗"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 10.0,
+    "description": "三只长耳兔在铺满木屑的地面上站立，其中两只面对面站立，一只在右侧背对镜头。",
+    "objects": [
+      "长耳兔",
+      "木屑地面",
+      "围栏",
+      "树木",
+      "石头"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "室外动物园"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 11.0,
+    "description": "三只长耳兔在木屑地面上维持原位，其中两只面对面，右侧的一只背对镜头。",
+    "objects": [
+      "长耳兔",
+      "木屑地面",
+      "围栏",
+      "树木",
+      "石头"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "室外动物园"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 12.0,
+    "description": "镜头发生闪烁或重叠，显示出多只长耳兔在围栏周围活动的重影画面。",
+    "objects": [
+      "长耳兔",
+      "围栏",
+      "木屑地面",
+      "树木"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "室外动物园"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 13.0,
+    "description": "镜头切换，展示了更多长耳兔和一只较大的黄鼠兔在白墙边的木屑地上活动。",
+    "objects": [
+      "长耳兔",
+      "黄鼠兔",
+      "白墙",
+      "木屑地面",
+      "围栏"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "室外动物园"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 14.0,
+    "description": "镜头再次切换，显示长耳兔和黄鼠兔在木屑地面上的近景，位置与前一帧相似。",
+    "objects": [
+      "长耳兔",
+      "黄鼠兔",
+      "木屑地面",
+      "围栏",
+      "石头"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "室外动物园"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 15.0,
+    "description": "几只小袋鼠在铺满木屑的地面上活动，其中一只较大的袋鼠正面向镜头。",
+    "objects": [
+      "小袋鼠",
+      "大型袋鼠",
+      "木屑地面",
+      "石块",
+      "围栏",
+      "白色墙壁"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 16.0,
+    "description": "一个小女孩穿着粉色外套在小袋鼠旁边站立，其中一只小袋鼠靠近她。",
+    "objects": [
+      "小女孩",
+      "小袋鼠",
+      "木屑地面",
+      "围栏",
+      "混凝土路径"
+    ],
+    "people": [
+      "一个小女孩，穿着粉色外套和黑色裤子，脚穿粉色鞋子"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 17.0,
+    "description": "小女孩继续站在小袋鼠旁边，旁边还有其他两只小袋鼠在活动。",
+    "objects": [
+      "小女孩",
+      "小袋鼠",
+      "木屑地面",
+      "围栏",
+      "混凝土路径"
+    ],
+    "people": [
+      "一个小女孩，穿着粉色外套和黑色裤子，脚穿粉色鞋子"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 18.0,
+    "description": "小女孩蹲下身子靠近其中一只小袋鼠，附近有另外两只小袋鼠。",
+    "objects": [
+      "小女孩",
+      "小袋鼠",
+      "木屑地面",
+      "围栏",
+      "混凝土路径"
+    ],
+    "people": [
+      "一个小女孩，穿着粉色外套和黑色裤子，脚穿粉色鞋子，正在蹲下"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 19.0,
+    "description": "小女孩站立在区域内，两只小袋鼠位于她的右侧，其中一只正面向镜头。",
+    "objects": [
+      "小女孩",
+      "小袋鼠",
+      "木屑地面",
+      "围栏",
+      "混凝土路径"
+    ],
+    "people": [
+      "一个小女孩，穿着粉色外套和黑色裤子，脚穿粉色鞋子"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 20.0,
+    "description": "一个小女孩站在铺满碎石的地面上，面前有两只长耳兔（或类似动物）在走动。",
+    "objects": [
+      "碎石地面",
+      "围栏",
+      "长耳兔",
+      "水泥路径"
+    ],
+    "people": [
+      "一个小女孩，穿着粉色外套、黑色裤子和粉色鞋子，正看着镜头"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 21.0,
+    "description": "小女孩在碎石地上站立，两只长耳兔在她的左右两侧移动。",
+    "objects": [
+      "碎石地面",
+      "围栏",
+      "长耳兔",
+      "水泥路径"
+    ],
+    "people": [
+      "一个小女孩，穿着粉色外套、黑色裤子和粉色鞋子，面带微笑"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 22.0,
+    "description": "画面出现透明叠加效果，小女孩在右侧，左侧叠加了另一个人的虚影，右侧有一只长耳兔。",
+    "objects": [
+      "碎石地面",
+      "围栏",
+      "长耳兔",
+      "水泥路径",
+      "透明叠加层"
+    ],
+    "people": [
+      "一个小女孩，穿着粉色外套，黑色裤子",
+      "一个虚影人物（左侧）"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 23.0,
+    "description": "一名女性手持手机正在自拍，身后是一个围栏，里面有一只羊驼和一只白色的羊类动物。",
+    "objects": [
+      "围栏",
+      "羊驼",
+      "白色羊类动物",
+      "树木",
+      "建筑物",
+      "碎石路"
+    ],
+    "people": [
+      "一名女性，穿着粉色毛衣和黑色长裤，正举起手机自拍"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 24.0,
+    "description": "女性继续手持手机自拍，身后的羊驼和白色的羊类动物在围栏内活动。",
+    "objects": [
+      "围栏",
+      "羊驼",
+      "白色羊类动物",
+      "树木",
+      "建筑物",
+      "碎石路"
+    ],
+    "people": [
+      "一名女性，穿着粉色毛衣和黑色长裤，正对着手机镜头微笑"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 25.0,
+    "description": "一名穿着粉色毛衣的女性站在围栏旁，伸出手向围栏内的棕色长毛狗喂食，旁边还有一只白色狗在互动。",
+    "objects": [
+      "围栏",
+      "喂食器",
+      "棕色长毛狗",
+      "白色狗",
+      "木制结构",
+      "树木"
+    ],
+    "people": [
+      "一名穿着粉色毛衣、黑色裤子和黑色运动鞋的女性，戴着粉色帽子"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 26.0,
+    "description": "画面与上一帧基本一致，女性继续伸出手，棕色长毛狗正对着她的手。 ",
+    "objects": [
+      "围栏",
+      "棕色长毛狗",
+      "白色狗",
+      "木制结构",
+      "树木"
+    ],
+    "people": [
+      "一名穿着粉色毛衣、黑色裤子和黑色运动鞋的女性，戴着粉色帽子"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 27.0,
+    "description": "女性微微侧身，继续与围栏内的棕色长毛狗互动。 ",
+    "objects": [
+      "围栏",
+      "棕色长毛狗",
+      "白色狗",
+      "木制结构",
+      "树木"
+    ],
+    "people": [
+      "一名穿着粉色毛衣、黑色裤子和黑色运动鞋的女性，戴着粉色帽子"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 28.0,
+    "description": "镜头切换到户外风景，展示了一根带有多个指示牌的立柱，背景是树林和山脉。",
+    "objects": [
+      "指示牌立柱",
+      "树林",
+      "山脉",
+      "草地"
+    ],
+    "people": [],
+    "text_overlay": "リジェイノ地 (RIJEINO 地), ブルーレッツル地 (BLUE REZZLE 地)",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 29.0,
+    "description": "在草坪上，三个人在树木和房屋之间走动或站立，背景有红叶树。 ",
+    "objects": [
+      "草坪",
+      "房屋",
+      "红叶树",
+      "长椅",
+      "树木"
+    ],
+    "people": [
+      "一名穿着白色上衣和浅色裤子的男性",
+      "一名穿着浅色长裙的女性",
+      "一名穿着米色外套和牛仔裤的女性",
+      "一名穿着黑色上衣和黑色裤子的女性"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 30.0,
+    "description": "四个年轻人聚集在草坪上，其中一人在左侧拿着手机，另外三人正在中间互动，背景是带有红叶的树木和一座房屋。",
+    "objects": [
+      "草坪",
+      "房屋",
+      "红叶树",
+      "长椅",
+      "树丛",
+      "纸袋"
+    ],
+    "people": [
+      "左侧穿着白色上衣和米色长裤的男生拿着手机",
+      "中间穿着米色长外套和深色裤子的女生拿着纸袋",
+      "中间穿着米色长裙的女生",
+      "右侧穿着黄色上衣的女生",
+      "右侧穿着黑色上衣和黑色长裤的男生"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 31.0,
+    "description": "画面中四个人的位置略有变动，左侧男生依然拿着手机，中间穿着米色长外套的女生正在转身。 ",
+    "objects": [
+      "草坪",
+      "房屋",
+      "红叶树",
+      "长椅",
+      "纸袋"
+    ],
+    "people": [
+      "左侧穿着白色上衣和米色长裤的男生",
+      "中间穿着米色长外套和深色裤子的女生",
+      "中间穿着米色长裙的女生",
+      "右侧穿着黄色上衣的女生",
+      "右侧穿着黑色上衣和黑色长裤的男生"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 32.0,
+    "description": "四人位置继续移动，中间穿着米色长外套的女生面向右侧，穿着长裙的女生背对镜头。",
+    "objects": [
+      "草坪",
+      "房屋",
+      "红叶树",
+      "长椅",
+      "纸袋"
+    ],
+    "people": [
+      "左侧穿着白色上衣和米色长裤的男生",
+      "中间穿着米色长外套和深色裤子的女生",
+      "中间穿着米色长裙的女生",
+      "右侧穿着黄色上衣的女生",
+      "右侧穿着黑色上衣和黑色长裤的男生"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 33.0,
+    "description": "左侧穿着白色上衣的男生正在观看手机，画面中心呈现四个人的互动，背景可见红叶树和远处的山脉。",
+    "objects": [
+      "草坪",
+      "房屋",
+      "红叶树",
+      "长椅",
+      "纸袋",
+      "远山"
+    ],
+    "people": [
+      "左侧穿着白色上衣和米色长裤的男生",
+      "中间穿着米色长外套和深色裤子的女生",
+      "中间穿着米色长裙的女生",
+      "右侧穿着黄色上衣的女生",
+      "右侧穿着黑色上衣和黑色长裤的男生"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 34.0,
+    "description": "画面中左侧的男生离开了视线边缘，中间穿着米色长外套的女生在左侧，另一名穿着长裙的女生在中间，右侧男生在移动。",
+    "objects": [
+      "草坪",
+      "房屋",
+      "红叶树",
+      "长椅",
+      "远山"
+    ],
+    "people": [
+      "左侧穿着米色长外套和深色裤子的女生",
+      "中间穿着米色长裙的女生",
+      "右侧穿着黄色上衣的女生",
+      "右侧穿着黑色上衣和黑色长裤的男生"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 35.0,
+    "description": "一个穿着米色长裙的女子站在左侧，两个人在草坪中央的树下活动，背景是秋天的树木和山脉。",
+    "objects": [
+      "树木",
+      "长椅",
+      "草坪",
+      "远山",
+      "房屋"
+    ],
+    "people": [
+      {
+        "description": "穿着米色长裙的女子，面向右侧站立"
+      },
+      {
+        "description": "穿着黄色外套的女子，坐在长椅上"
+      },
+      {
+        "description": "穿着黑色运动装的男子，正在草坪上奔跑或跳跃"
+      }
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 36.0,
+    "description": "画面中的男子正在草坪上奔跑，女子依然坐在长椅上，背景中的树叶呈现深红色。",
+    "objects": [
+      "树木",
+      "长椅",
+      "草坪",
+      "远山",
+      "房屋"
+    ],
+    "people": [
+      {
+        "description": "穿着黑色运动装的男子，正在奔跑"
+      },
+      {
+        "description": "穿着黄色外套的女子，坐在长椅上"
+      }
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 37.0,
+    "description": "男子在草坪上继续移动，女子坐在长椅上，天空云层较厚。",
+    "objects": [
+      "树木",
+      "长椅",
+      "草坪",
+      "远山",
+      "房屋"
+    ],
+    "people": [
+      {
+        "description": "穿着黑色运动装的男子，在草坪上移动"
+      },
+      {
+        "description": "穿着黄色外套的女子，坐在长椅上"
+      }
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 38.0,
+    "description": "男子蹲在草坪上，女子坐在长椅上，背景中可以看到房屋和茂密的树林。",
+    "objects": [
+      "树木",
+      "长椅",
+      "草坪",
+      "房屋",
+      "远山"
+    ],
+    "people": [
+      {
+        "description": "穿着黑色运动装的男子，正蹲在草地上"
+      },
+      {
+        "description": "穿着黄色外套的女子，坐在长椅上"
+      }
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 39.0,
+    "description": "画面切换到房屋前的草坪，三个人的身影出现在房屋和树木之间，背景是起伏的山脉。",
+    "objects": [
+      "房屋",
+      "树木",
+      "草坪",
+      "长椅",
+      "指示牌",
+      "远山"
+    ],
+    "people": [
+      {
+        "description": "穿着米色/浅色衣服的女子"
+      },
+      {
+        "description": "穿着黑色运动装的男子"
+      },
+      {
+        "description": "穿着白色或浅色衣服的女子"
+      }
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 40.0,
+    "description": "三个人站在带红叶树的乡村房屋前的草地上，远处是山脉。",
+    "objects": [
+      "房屋",
+      "红叶树",
+      "草地",
+      "山脉",
+      "指示牌"
+    ],
+    "people": [
+      "穿着浅色上衣和深色裤子的女性",
+      "穿着白色上衣和深色裙子的女性",
+      "穿着白色上衣和牛仔裤的男性"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 41.0,
+    "description": "视角转向开阔的草地和野花，远处是连绵的群山，天空多云。",
+    "objects": [
+      "草地",
+      "野花",
+      "指示牌",
+      "山脉",
+      "树木"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 42.0,
+    "description": "镜头在草地路径上移动，展示出远处的山脉和杂草丛。",
+    "objects": [
+      "草地路径",
+      "指示牌",
+      "野花",
+      "山脉",
+      "树木"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 43.0,
+    "description": "镜头继续向前移动，可以看到远处的树林和山脉，前景是干枯的草丛。",
+    "objects": [
+      "草地",
+      "指示牌",
+      "树林",
+      "山脉",
+      "电线杆"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 44.0,
+    "description": "镜头俯瞰或在低角度展示开阔的田野，充满了金色的秋季野草，背景是树林和山脉。",
+    "objects": [
+      "草地",
+      "干草",
+      "树林",
+      "山脉",
+      "电线杆"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 45.0,
+    "description": "画面展示了广阔的田野，远处有山脉，天空多云。前景是干枯的草丛，中间有一片开阔的平原和远处的树林。",
+    "objects": [
+      "干草",
+      "山脉",
+      "树林",
+      "云层",
+      "电线杆"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 46.0,
+    "description": "镜头稍微平移或变焦，继续展示广阔的草地和远处的树林。山脉在背景中隐约可见，天空依然阴沉。",
+    "objects": [
+      "干草",
+      "树林",
+      "电线杆",
+      "山脉",
+      "道路"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 47.0,
+    "description": "视角平移，更清晰地展示出带有颜色变化的草丛和右侧的树林，以及背景中的山峦。",
+    "objects": [
+      "干草",
+      "山脉",
+      "电线杆",
+      "树林",
+      "草地"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 48.0,
+    "description": "镜头移动到了更靠近草地和树林的位置，可以看到清晰的干草丛和深色的针叶树林，远处有明显的山岭轮廓。",
+    "objects": [
+      "干草",
+      "树林",
+      "山岭",
+      "草地",
+      "灌木"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 49.0,
+    "description": "镜头靠近草丛和一条细小的土路。右侧可见明显的树林和一些变黄的叶子，地上的干草丛变得非常清晰。",
+    "objects": [
+      "干草",
+      "土路",
+      "针叶树林",
+      "变色树木",
+      "标识牌"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 50.0,
+    "description": "镜头展现出一片开阔的草地和山坡，背景是茂密的针叶林和阴沉的云层。",
+    "objects": [
+      "山脉",
+      "针叶树林",
+      "草地",
+      "野花",
+      "道路",
+      "路标"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 51.0,
+    "description": "镜头稍微向右平移，展示了更多高大的针叶树和盛开的野花。",
+    "objects": [
+      "针叶树林",
+      "野花",
+      "路标",
+      "草地",
+      "山脉"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 52.0,
+    "description": "镜头开始向右侧移动，画面中出现了一个背对着镜头走入草丛的人影。",
+    "objects": [
+      "野花",
+      "草地",
+      "树林",
+      "山脉",
+      "电线杆"
+    ],
+    "people": [
+      "一个穿着深色衣服、背着包的人，正背对镜头行走"
+    ],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 53.0,
+    "description": "镜头继续向右平移，可以看到远处的一条公路和更多的植被。",
+    "objects": [
+      "野花",
+      "草地",
+      "电线杆",
+      "树林",
+      "道路",
+      "山脉"
+    ],
+    "people": [
+      "一个背对着镜头行走的人，身穿深色上衣，背着相机包"
+    ],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 54.0,
+    "description": "镜头最后平移至右侧，清晰地看到一个戴着眼镜、穿着黑色外套的男子正举着相机拍摄。 ",
+    "objects": [
+      "野花",
+      "草地",
+      "树林",
+      "电线杆",
+      "相机"
+    ],
+    "people": [
+      "一个戴着眼镜的男子，穿着黑色连帽外套，手持相机在拍摄"
+    ],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 55.0,
+    "description": "在云雾缭绕的草甸上拍摄远处的山脉和植被。",
+    "objects": [
+      "草甸",
+      "远山",
+      "树木",
+      "草",
+      "云层"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 56.0,
+    "description": "视角稍有移动，依然呈现出壮阔的草甸与远山景观。",
+    "objects": [
+      "草甸",
+      "远山",
+      "树木",
+      "云层"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 57.0,
+    "description": "画面出现路人，他们站在铺设好的道路上，背景是浓重的云雾。",
+    "objects": [
+      "道路",
+      "木质护栏",
+      "测量仪器",
+      "远山",
+      "云雾"
+    ],
+    "people": [
+      {
+        "description": "身穿蓝色外套的男子",
+        "action": "站立"
+      },
+      {
+        "description": "身穿米色长裙的女子",
+        "action": "站立"
+      },
+      {
+        "description": "背着背包的男子",
+        "action": "站立并拿手机拍摄"
+      }
+    ],
+    "text_overlay": "",
+    "scene_type": "室外/高山景观"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 58.0,
+    "description": "镜头在路面上移动，近处可见木质护栏，路人仍在画面中。",
+    "objects": [
+      "道路",
+      "木质护栏",
+      "测量仪器",
+      "云雾",
+      "人群"
+    ],
+    "people": [
+      {
+        "description": "身穿蓝色外套的男子",
+        "action": "站立"
+      },
+      {
+        "description": "身穿米色长裙的女子",
+        "action": "站立"
+      },
+      {
+        "description": "背着背包的男子",
+        "action": "正举起手机拍摄"
+      }
+    ],
+    "text_overlay": "",
+    "scene_type": "室外/高山景观"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 59.0,
+    "description": "视角继续向前推进，路人的站位清晰，周围是巨大的云雾包围。",
+    "objects": [
+      "道路",
+      "木质护栏",
+      "测量仪器",
+      "云雾",
+      "人群"
+    ],
+    "people": [
+      {
+        "description": "身穿蓝色外套的男子",
+        "action": "站立"
+      },
+      {
+        "description": "身穿米色长裙的女子",
+        "action": "站立"
+      },
+      {
+        "description": "背着背包的男子",
+        "action": "举手机拍摄"
+      }
+    ],
+    "text_overlay": "",
+    "scene_type": "室外/高山景观"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 60.0,
+    "description": "在多雾的火山景观中，三个人站在铺设好的路面上。左侧有一座建筑，背景是冒着蒸汽的火山口。",
+    "objects": [
+      "围栏",
+      "建筑",
+      "路面",
+      "风速计",
+      "地表蒸汽",
+      "告示牌"
+    ],
+    "people": [
+      "穿着浅色长裙的女性",
+      "穿着蓝色夹克和深色裤子的女性",
+      "穿着白色外套和米色长裤、背着背包并正在拍照的男性"
+    ],
+    "text_overlay": "NO ENTRY",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 61.0,
+    "description": "镜头略微变换，依然显示在火山景观中，蒸汽弥漫。三个人的位置变动，特别是身穿白色外套的男性。背景可以看到起伏的山峦。",
+    "objects": [
+      "围栏",
+      "地表蒸汽",
+      "山脉",
+      "路面"
+    ],
+    "people": [
+      "穿着浅色长裙的女性",
+      "穿着蓝色夹克和深色裤子的女性",
+      "穿着白色外套和米色长裤、背着背包并正在拍照的男性"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 62.0,
+    "description": "镜头聚焦于火山口内部，大量的白蒸汽从地缝中喷发出来。背景是陡峭、荒芜的山坡。",
+    "objects": [
+      "火山口",
+      "大量的蒸汽",
+      "荒芜的山坡",
+      "岩石地表"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 63.0,
+    "description": "画面中继续展示火山喷发的蒸汽，浓厚的白烟在荒凉的山坡上方翻滚，景观非常壮观。",
+    "objects": [
+      "火山口",
+      "大量的蒸汽",
+      "岩石地表",
+      "远处的山脉"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 64.0,
+    "description": "镜头转向右侧，展现出更广阔的火山地貌，蒸汽在深色的岩石背景下清晰可见。",
+    "objects": [
+      "火山口",
+      "大量的蒸汽",
+      "深色岩石",
+      "山脊线"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 65.0,
+    "description": "画面展示了火山景观，大量的白色蒸汽从地面冒出，背景是崎岖的山脉。",
+    "objects": [
+      "火山蒸汽",
+      "山脉",
+      "灰色的岩石地面",
+      "围栏",
+      "小建筑"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 66.0,
+    "description": "镜头略微移动，展示了更多从山坡冒出的浓密白烟，以及山坡上的道路和设施。",
+    "objects": [
+      "火山蒸汽",
+      "山脉",
+      "道路",
+      "围栏",
+      "建筑物"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 67.0,
+    "description": "画面进一步展示了大量的蒸汽弥漫在山谷中，视线受到蒸汽影响变得模糊。",
+    "objects": [
+      "火山蒸汽",
+      "山脉",
+      "围栏",
+      "建筑物"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 68.0,
+    "description": "镜头拉近并转向，展示了火山口附近的设施，蒸汽依然在背景中翻滚。",
+    "objects": [
+      "火山蒸汽",
+      "山脉",
+      "围栏",
+      "建筑物",
+      "道路"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 69.0,
+    "description": "镜头聚焦于一个石头砌成的观景平台，许多游客正站在平台上欣赏火山口景观。",
+    "objects": [
+      "石头建筑",
+      "围栏",
+      "游客",
+      "山脉",
+      "蒸汽"
+    ],
+    "people": [
+      "多名穿着冬装的游客，正在平台上站立、拍照或观看景观"
+    ],
+    "text_overlay": "",
+    "scene_type": "旅游景点"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 70.0,
+    "description": "在高海拔山区的石砌建筑旁，一名穿着红色格子外套的女子正走向入口，背景是连绵的群山和阴沉的天空。",
+    "objects": [
+      "石砌建筑",
+      "木制护栏",
+      "指示牌",
+      "山脉",
+      "浓雾"
+    ],
+    "people": [
+      "一名穿着红色格子外套、牛仔裤并提着红色提包的女子",
+      "顶部有几名远处的游客"
+    ],
+    "text_overlay": "包含部分不可辨认的指示牌文字",
+    "scene_type": "室外/高海拔景区"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 71.0,
+    "description": "镜头稍微前移，女子正步入建筑入口。上方平台仍有游客在远眺风景。",
+    "objects": [
+      "石砌建筑",
+      "木制护栏",
+      "山脉",
+      "云雾"
+    ],
+    "people": [
+      "穿着红色格子外套的女子",
+      "上方平台上的游客"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外/高海拔景区"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 72.0,
+    "description": "镜头切换到观景台，一群游客聚集在一起，其中一人正指向远处的喷发点，背景中巨大的水汽正从地底喷出。",
+    "objects": [
+      "木制护栏",
+      "水汽喷发",
+      "群山",
+      "背包"
+    ],
+    "people": [
+      "多名穿着各色防寒外套的游客，其中一人正伸手指着喷发的火山口区域"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外/自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 73.0,
+    "description": "游客们继续近距离观察地底喷发的强力水汽，水汽形成巨大的白色云团遮挡了视线。",
+    "objects": [
+      "水汽喷发",
+      "木制护栏",
+      "群山",
+      "背包"
+    ],
+    "people": [
+      "多名穿着防寒服的游客，包括穿着蓝色牛仔夹克的女生和背着背包的男生"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外/自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 74.0,
+    "description": "视角略微偏移，展示了游客观察喷发点的近景，强烈的地热蒸汽在空中升腾。",
+    "objects": [
+      "喷发的蒸汽",
+      "木制护栏",
+      "群山",
+      "相机"
+    ],
+    "people": [
+      "多名穿着厚重外套的游客，其中一人正拿着相机，另一人正指着蒸汽源"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外/自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 75.0,
+    "description": "几个人正沿着山区的铺装道路行走，背景是荒凉的火山地貌和房屋。",
+    "objects": [
+      "铺装道路",
+      "木质护栏",
+      "低矮建筑",
+      "车辆",
+      "山脉",
+      "围栏"
+    ],
+    "people": [
+      {
+        "描述": "穿着浅色长裤和浅色上衣，背着背包，背对镜头行走"
+      },
+      {
+        "描述": "穿着黑色长裤和深色上衣，背对镜头行走"
+      },
+      {
+        "描述": "穿着浅色裙子行走"
+      },
+      {
+        "描述": "身穿浅色服装的人在前方行走"
+      }
+    ],
+    "text_overlay": "",
+    "scene_type": "室外（山区/火山地貌）"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 76.0,
+    "description": "视角略微改变，人们继续在山区的道路上行走，木质护栏上有一个标牌。",
+    "objects": [
+      "铺装道路",
+      "木质护栏",
+      "标牌",
+      "山脉",
+      "建筑物"
+    ],
+    "people": [
+      {
+        "描述": "穿着浅色长裤和上衣，背着背包，背对镜头行走"
+      },
+      {
+        "描述": "穿着黑色衣服，背对镜头行走"
+      },
+      {
+        "描述": "身穿白色或浅色衣服行走"
+      }
+    ],
+    "text_overlay": "标牌上有文字和图形",
+    "scene_type": "室外（山区/火山地貌）"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 77.0,
+    "description": "镜头切换到开阔的草甸，背景是高大的山峰和蓝天白云，一个人在山坡上行走。",
+    "objects": [
+      "草甸",
+      "山峰",
+      "白云",
+      "蓝天"
+    ],
+    "people": [
+      {
+        "描述": "穿着深色衣服，在草甸上行走"
+      }
+    ],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 78.0,
+    "description": "展现了金色的草甸和山坡，阳光照射在草丛上，远处是连绵的山脉。",
+    "objects": [
+      "草甸",
+      "山脉",
+      "孤立的树木",
+      "蓝天",
+      "白云"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 79.0,
+    "description": "视角更广的自然风光，展现了大片的黄色草甸、山坡和晴朗的天空。",
+    "objects": [
+      "草甸",
+      "山脉",
+      "树木",
+      "蓝天",
+      "白云"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 80.0,
+    "description": "三个人站在高山草甸上，背景是金黄色和红色的山坡，一个男人正拿着相机拍摄。",
+    "objects": [
+      "高山",
+      "草甸",
+      "树木",
+      "相机",
+      "背包"
+    ],
+    "people": [
+      "戴红帽子的女性穿着深绿色外套",
+      "穿着白色外套和灰色长裤的男子",
+      "戴浅色帽子的女性穿着蓝色外套",
+      "拿着相机拍摄的男子"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 81.0,
+    "description": "镜头切换到不同角度，画面中出现了另外两名登山者，背景依然是宏伟的秋季高山景观。",
+    "objects": [
+      "高山",
+      "草甸",
+      "树木",
+      "背包"
+    ],
+    "people": [
+      "穿着黑色T恤的男子",
+      "穿着红色上衣的男子",
+      "伸手遮太阳的女性穿着蓝色上衣"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 82.0,
+    "description": "四个人聚集在一起，他们站在金色的草地中，背景是巨大的、带有阴影的岩石山峰。",
+    "objects": [
+      "高山",
+      "草甸",
+      "树木",
+      "帽子",
+      "背包"
+    ],
+    "people": [
+      "戴浅色帽子的女性穿着蓝色外套",
+      "穿着黑色上衣的男子",
+      "戴红帽子的女性穿着深绿色外套",
+      "背景中站立的男子"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 83.0,
+    "description": "镜头平移，展示了更多的登山者，其中一人正指向远方的山峰。",
+    "objects": [
+      "高山",
+      "草甸",
+      "树木",
+      "背包"
+    ],
+    "people": [
+      "穿着黑色上衣并指着远方的男子",
+      "戴浅色帽子的女性穿着蓝色外套",
+      "戴红帽子的女性穿着深绿色外套",
+      "背景中的登山者"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 84.0,
+    "description": "画面集中在左侧的两人身上，其中一名女性穿着深绿色外套，正面对镜头方向。",
+    "objects": [
+      "高山",
+      "草甸",
+      "树木",
+      "背包"
+    ],
+    "people": [
+      "戴红帽子的女性穿着深绿色外套",
+      "戴浅色帽子的女性穿着蓝色外套"
+    ],
+    "text_overlay": "",
+    "scene_type": "室外"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 85.0,
+    "description": "镜头展示了一座被秋色覆盖的大山，阳光照射在斜坡上，形成明显的明暗交界线。",
+    "objects": [
+      "高山",
+      "秋叶",
+      "草地",
+      "云朵",
+      "岩石"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 86.0,
+    "description": "镜头向右平移，展示了更多连绵的山脉，山坡上的树木呈现出深浅不一的橙色和黄色。",
+    "objects": [
+      "山脉",
+      "秋叶",
+      "树木",
+      "天空",
+      "云朵"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 87.0,
+    "description": "镜头继续向右移动，展现出山谷的轮廓和更远处的山峰，天空中的云层分布较广。",
+    "objects": [
+      "山脉",
+      "树林",
+      "草坡",
+      "云朵",
+      "天空"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 88.0,
+    "description": "镜头大幅度向右移动，展示了深邃的山谷和周围高耸的群山，由于视角变化，山峰显得更加雄伟。",
+    "objects": [
+      "深谷",
+      "山峰",
+      "森林",
+      "天空",
+      "云层"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 89.0,
+    "description": "镜头最后定格在山谷的深处，展现出两座巨大的山峰对峙，前景是金色的草甸。",
+    "objects": [
+      "山脉",
+      "深谷",
+      "草甸",
+      "岩石",
+      "云朵"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 90.0,
+    "description": "阳光明媚的白天气象，展现了一片覆盖着黄色草地和零星树木的山坡。",
+    "objects": [
+      "山脉",
+      "草地",
+      "树木",
+      "蓝天",
+      "白云"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 91.0,
+    "description": "镜头稍微向右偏移，展示出更多山坡上的树木和远处的山峰。",
+    "objects": [
+      "山脉",
+      "草地",
+      "树木",
+      "蓝天",
+      "白云"
+    ],
+    "people": [],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 92.0,
+    "description": "一小群游客出现在草地上的小径上，背景是高耸的山峰。",
+    "objects": [
+      "山脉",
+      "草地",
+      "树木",
+      "蓝天",
+      "白云",
+      "小径"
+    ],
+    "people": [
+      "穿着白色外套的游客",
+      "穿着黑色上衣和牛仔裤的游客",
+      "穿着蓝色上衣和白色裤子的游客",
+      "穿着白色衣服的游客",
+      "穿着粉色/蓝色衣服的游客"
+    ],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  },
+  {
+    "source": "Fukuoka5DaysVlog1080p",
+    "timestamp": 93.0,
+    "description": "画面中心展示了游客群在草地的小径上行走，背景是巨大的山峰和强烈的阴影。",
+    "objects": [
+      "山脉",
+      "草地",
+      "树木",
+      "蓝天",
+      "白云",
+      "小径"
+    ],
+    "people": [
+      "穿着黑色上衣和牛仔裤的游客",
+      "穿着白色外套的游客",
+      "穿着蓝色上衣的游客",
+      "穿着白色衣服的游客",
+      "穿着粉色/蓝色衣服的游客"
+    ],
+    "text_overlay": "",
+    "scene_type": "自然风光"
+  }
+]

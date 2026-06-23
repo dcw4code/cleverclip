@@ -1,0 +1,47 @@
+# CleverClip 配置文件
+
+# LLM API 配置（OpenAI 兼容格式）
+llm:
+  # 视觉识别模型 —— 用于分析视频帧内容
+  vision:
+    base_url: "http://127.0.0.1:5000/v1"
+    api_key: "api-key-here"
+    model: "gemma-4-12B"
+    max_tokens: 2048
+    # 每批包含的图片帧数
+    batch_size: 5
+    # 并发请求数：同时向视觉 LLM 发送的批次数量
+    concurrency: 5
+
+  # 文本推理模型 —— 用于根据时间轴生成剪辑方案
+  text:
+    base_url: "http://127.0.0.1:5000/v1"
+    api_key: "api-key-here"
+    model: "gemma-4-12B"
+    max_tokens: 8192
+
+# 源视频目录（程序会自动扫描该目录下所有 .mp4 文件作为输入源）
+input:
+  source_clips_dir: "./source_clips"
+
+# 抽帧设置
+frame_extraction:
+  # 抽帧间隔（秒），即每隔多少秒抽一帧
+  interval: 1.0
+  # 最大抽帧数量，0 表示无限制
+  max_frames: 0
+  # 抽帧图片质量（JPEG，2-31，越小质量越好）
+  quality: 2
+
+# 输出设置
+output:
+  # 临时文件目录（存放抽帧图片等中间产物）
+  temp_dir: "./temp"
+  # 最终输出目录
+  output_dir: "./output"
+  # 输出视频编码
+  video_codec: "libx264"
+  # 输出视频 CRF（质量控制，18-28，越小质量越好）
+  crf: 18
+  # 输出视频预设
+  preset: "medium"
