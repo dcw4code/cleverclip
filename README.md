@@ -82,7 +82,13 @@ source_clips/
 python main.py analyze
 ```
 
-分析完成后会在 `temp/timeline.json` 生成统一的时间轴 JSON 文件。
+分析完成后，每个源视频会在 `temp/` 下生成独立的时间轴文件：
+```
+temp/
+├── timeline_video1.json
+├── timeline_video2.json
+└── timeline_video3.json
+```
 
 ### 自动剪辑
 
@@ -93,8 +99,8 @@ python main.py edit "提取所有有人在户外活动的片段"
 # 指定输出文件名
 python main.py edit "保留精彩的运动画面" -o highlights.mp4
 
-# 复用已有的时间轴（跳过重复分析）
-python main.py edit "不同需求" -t temp/timeline.json
+# 复用已有时间轴目录（跳过重复分析）
+python main.py edit "不同需求" -t temp/
 ```
 
 ### 剪辑需求示例
