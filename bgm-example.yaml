@@ -1,0 +1,18 @@
+# CleverClip 背景音乐配置文件
+# 复制此文件为 bgm.yaml 后按需修改
+# 使用方式: python main.py edit "需求" --enable-bgm bgm.yaml
+
+# 是否保留原视频声音
+# true: 原声 + BGM 混合（音量按下方比例）
+# false: 用 BGM 完全替换原声
+keep_original_audio: false
+
+# 原声和背景音乐的音量（满格 10）
+# keep_original_audio: true 时生效
+# 例如 2:8 表示原声音量 2/10，BGM 音量 8/10
+original_volume: 3
+bgm_volume: 7
+
+# 背景音乐文件路径
+# 也可以通过命令行 --bgm 参数覆盖此路径
+bgm_path: "bgm/summer.mp3"

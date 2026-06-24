@@ -19,14 +19,19 @@ class VideoEditor:
     def __init__(self, config: Config):
         self.config = config
 
-    def edit(self, source_videos: dict[str, Path], clips: list[dict], output_name: str = "output.mp4") -> Path:
+    def edit(self, source_videos: dict[str, Path], clips: list[dict],
+             output_name: str = "output.mp4",
+             bgm_path: str | Path | None = None,
+             bgm_config: dict | None = None) -> Path:
         """
-        根据剪辑方案裁切并拼接视频片段。
+        根据剪辑方案裁切并拼接视频片段，可选添加背景音乐。
 
         Args:
             source_videos: {来源名称(stem): 视频文件路径} 映射表
             clips: [{"source": str, "start": float, "end": float, "reason": str}, ...]
             output_name: 输出文件名
+            bgm_path: 背景音乐文件路径（简单模式，直接替换原声）
+            bgm_config: 背景音乐配置字典（高级模式，来自 bgm.yaml）
 
         Returns:
             输出文件路径
@@ -59,11 +64,29 @@ class VideoEditor:
                 segment_paths.append(seg_path)
 
             # 2. 拼接所有片段
-            output_path = self.config.output_dir / output_name
-            self._concat_segments(segment_paths, output_path)
+            concat_output = self.config.output_dir / output_name
+            self._concat_segments(segment_paths, concat_output)
 
-        console.print(f"[green]✓ 输出视频已生成: {output_path}[/green]")
-        return output_path
+        console.print(f"[green]✓ 拼接完成: {concat_output}[/green]")
+
+        # 3. 添加背景音乐
+        #    bgm_config（高级模式）优先；其次 bgm_path（简单模式）
+        if bgm_config:
+            self._apply_bgm_config(concat_output, bgm_config, bgm_path)
+        elif bgm_path:
+            bgm_path = Path(bgm_path)
+            if not bgm_path.exists():
+                console.print(f"[red]BGM 文件不存在: {bgm_path}，跳过背景音乐[/red]")
+            else:
+                console.print(f"\n[dim]添加背景音乐（替换原声）: {bgm_path.name}...[/dim]")
+                final_output = concat_output.with_suffix(".tmp.mp4")
+                self._replace_audio_with_bgm(concat_output, bgm_path, final_output)
+                concat_output.unlink()
+                final_output.rename(concat_output)
+                console.print(f"[green]✓ 背景音乐已添加（已替换原声）[/green]")
+
+        console.print(f"[green]✓ 输出视频已生成: {concat_output}[/green]")
+        return concat_output
 
     def _cut_segment(self, video_path: Path, start: float, end: float, output: Path) -> None:
         """裁切单个片段"""
@@ -121,6 +144,105 @@ class VideoEditor:
             result = subprocess.run(cmd, capture_output=True, text=True)
             if result.returncode != 0:
                 raise RuntimeError(f"拼接视频失败:\n{result.stderr[-500:]}")
+
+    def _replace_audio_with_bgm(self, video_path: Path, bgm_path: Path, output: Path) -> None:
+        """
+        用 BGM 替换视频的原始音频。
+
+        - BGM 短于视频时自动循环
+        - BGM 长于视频时截断到视频长度
+        - 视频画面直接 copy，不重新编码
+        """
+        cmd = [
+            "ffmpeg",
+            "-i", str(video_path),
+            "-stream_loop", "-1",          # BGM 无限循环
+            "-i", str(bgm_path),
+            "-map", "0:v",                 # 取视频画面
+            "-map", "1:a",                 # 取 BGM 音频（替换原声）
+            "-c:v", "copy",               # 视频直接复制
+            "-c:a", "aac",                # 音频编码为 AAC
+            "-shortest",                   # 输出以视频长度为准
+            "-y", str(output),
+        ]
+        result = subprocess.run(cmd, capture_output=True, text=True)
+        if result.returncode != 0:
+            raise RuntimeError(f"添加背景音乐失败:\n{result.stderr[-500:]}")
+
+    def _mix_audio_with_bgm(self, video_path: Path, bgm_path: Path,
+                            original_vol: float, bgm_vol: float, output: Path) -> None:
+        """
+        将原声与 BGM 按指定音量比例混合。
+
+        Args:
+            original_vol: 原声音量 (0.0~1.0)
+            bgm_vol: BGM 音量 (0.0~1.0)
+        """
+        filter_complex = (
+            f"[0:a]volume={original_vol}[a1];"
+            f"[1:a]volume={bgm_vol}[a2];"
+            f"[a1][a2]amix=inputs=2:duration=first[aout]"
+        )
+        cmd = [
+            "ffmpeg",
+            "-i", str(video_path),
+            "-stream_loop", "-1",
+            "-i", str(bgm_path),
+            "-filter_complex", filter_complex,
+            "-map", "0:v",
+            "-map", "[aout]",
+            "-c:v", "copy",
+            "-c:a", "aac",
+            "-shortest",
+            "-y", str(output),
+        ]
+        result = subprocess.run(cmd, capture_output=True, text=True)
+        if result.returncode != 0:
+            raise RuntimeError(f"混合背景音乐失败:\n{result.stderr[-500:]}")
+
+    def _apply_bgm_config(self, concat_output: Path, bgm_config: dict,
+                          bgm_override: str | Path | None = None) -> None:
+        """
+        根据 bgm.yaml 配置添加背景音乐。
+
+        Args:
+            concat_output: 拼接后的视频路径
+            bgm_config: bgm.yaml 解析后的字典
+            bgm_override: 命令行 --bgm 指定的路径，优先于配置文件中的 bgm_path
+        """
+        keep_original = bgm_config.get("keep_original_audio", False)
+        original_vol_raw = bgm_config.get("original_volume", 5)
+        bgm_vol_raw = bgm_config.get("bgm_volume", 5)
+        config_bgm_path = bgm_config.get("bgm_path", "")
+
+        # 确定最终 BGM 文件路径：命令行 --bgm 优先，其次配置文件
+        bgm_path = Path(bgm_override) if bgm_override else Path(config_bgm_path)
+        if not bgm_path.exists():
+            console.print(f"[red]BGM 文件不存在: {bgm_path}，跳过背景音乐[/red]")
+            return
+
+        # 音量从 0-10 刻度转换为 0.0-1.0
+        original_vol = max(0.0, min(1.0, original_vol_raw / 10.0))
+        bgm_vol = max(0.0, min(1.0, bgm_vol_raw / 10.0))
+
+        console.print(f"\n[dim]背景音乐配置: {bgm_path.name}[/dim]")
+        console.print(
+            f"[dim]  保留原声: {'是' if keep_original else '否'}"
+            f"  |  原声: {original_vol_raw}/10  BGM: {bgm_vol_raw}/10[/dim]"
+        )
+
+        final_output = concat_output.with_suffix(".tmp.mp4")
+
+        if keep_original:
+            console.print("[dim]  模式: 原声 + BGM 混合...[/dim]")
+            self._mix_audio_with_bgm(concat_output, bgm_path, original_vol, bgm_vol, final_output)
+        else:
+            console.print("[dim]  模式: BGM 替换原声...[/dim]")
+            self._replace_audio_with_bgm(concat_output, bgm_path, final_output)
+
+        concat_output.unlink()
+        final_output.rename(concat_output)
+        console.print(f"[green]✓ 背景音乐已添加[/green]")
 
     @staticmethod
     def _display_clips(clips: list[dict]) -> None:

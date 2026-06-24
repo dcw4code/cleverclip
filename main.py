@@ -84,7 +84,8 @@ async def run_analyze(cfg: Config) -> None:
     console.print(f"[dim]时间轴文件: {cfg.temp_dir}/timeline_*.json[/dim]")
 
 
-async def run_edit(cfg: Config, timeline_dir: str | None, requirement: str, output: str) -> Path:
+async def run_edit(cfg: Config, timeline_dir: str | None, requirement: str, output: str,
+                   bgm: str | None, bgm_cfg: str | None) -> Path:
     """执行剪辑流程"""
     # Step 1: 确保有时间轴数据
     if timeline_dir:
@@ -151,7 +152,20 @@ async def run_edit(cfg: Config, timeline_dir: str | None, requirement: str, outp
     videos = discover_source_videos(cfg)
     source_map = build_source_map(videos)
     editor = VideoEditor(cfg)
-    result_path = editor.edit(source_map, all_clips)
+
+    # 加载 bgm 配置
+    bgm_config = None
+    if bgm_cfg:
+        import yaml
+        bgm_cfg_path = Path(bgm_cfg)
+        if not bgm_cfg_path.exists():
+            console.print(f"[red]BGM 配置文件不存在: {bgm_cfg_path}[/red]")
+            sys.exit(1)
+        with open(bgm_cfg_path, "r", encoding="utf-8") as f:
+            bgm_config = yaml.safe_load(f) or {}
+        console.print(f"[cyan]已加载 BGM 配置: {bgm_cfg}[/cyan]")
+
+    result_path = editor.edit(source_map, all_clips, bgm_path=bgm, bgm_config=bgm_config)
 
     # 如果指定了输出文件名，重命名
     if output != "output.mp4":
@@ -187,7 +201,9 @@ def analyze(config: str):
 @click.option("--config", "-c", default="config.yaml", help="配置文件路径")
 @click.option("--output", "-o", default="output.mp4", help="输出文件名")
 @click.option("--timeline-dir", "-t", default=None, help="使用已有时间轴的目录（含 timeline_*.json），跳过分析步骤")
-def edit(requirement: str, config: str, output: str, timeline_dir: str):
+@click.option("--bgm", default=None, help="背景音乐文件路径，快捷模式直接替换原声（如 bgm/summer.mp3）")
+@click.option("--bgm-cfg", default=None, help="BGM 配置文件路径，支持音量混合等高级选项（如 bgm.yaml）")
+def edit(requirement: str, config: str, output: str, timeline_dir: str, bgm: str, bgm_cfg: str):
     """根据自然语言需求剪辑视频（输入源为 source_clips/ 下的所有 .mp4）
 
     \b
@@ -195,6 +211,8 @@ def edit(requirement: str, config: str, output: str, timeline_dir: str):
       python main.py edit "提取所有有人在说话的片段"
       python main.py edit "保留户外风景部分" -o result.mp4
       python main.py edit "精彩集锦" -t temp/
+      python main.py edit "火山片段" --bgm bgm/summer.mp3
+      python main.py edit "火山片段" --bgm-cfg bgm.yaml
     """
     console.print(Panel.fit("[bold cyan]CleverClip —— AI 视频自动剪辑[/bold cyan]"))
 
@@ -203,7 +221,7 @@ def edit(requirement: str, config: str, output: str, timeline_dir: str):
         sys.exit(1)
 
     cfg = Config(config)
-    result_path = asyncio.run(run_edit(cfg, timeline_dir, requirement, output))
+    result_path = asyncio.run(run_edit(cfg, timeline_dir, requirement, output, bgm, bgm_cfg))
 
     console.print(f"\n[bold green]🎉 剪辑完成！输出文件: {result_path}[/bold green]")
 

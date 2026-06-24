@@ -12,6 +12,7 @@ env/
 
 # 配置文件（含 API Key，勿提交）
 config.yaml
+bgm.yaml
 
 # 临时文件（抽帧图片、中间产物）
 temp/

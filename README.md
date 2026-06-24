@@ -101,7 +101,35 @@ python main.py edit "保留精彩的运动画面" -o highlights.mp4
 
 # 复用已有时间轴目录（跳过重复分析）
 python main.py edit "不同需求" -t temp/
+
+# 使用背景音乐替换原视频声音（快捷模式）
+python main.py edit "火山片段" -o highlights.mp4 --bgm bgm/summer.mp3
+
+# 使用 BGM 配置文件（高级模式：音量混合、保留原声等）
+python main.py edit "火山片段" --bgm-cfg bgm.yaml
 ```
+
+### 背景音乐配置（`--bgm-cfg`）
+
+复制 `bgm-example.yaml` 为 `bgm.yaml` 并按需修改：
+
+```yaml
+# 是否保留原视频声音
+keep_original_audio: false
+
+# 原声和背景音乐的音量（满格 10）
+# keep_original_audio: true 时生效，例如 2:8
+original_volume: 3
+bgm_volume: 7
+
+# 背景音乐文件路径（也可通过 --bgm 命令行参数覆盖）
+bgm_path: "bgm/summer.mp3"
+```
+
+| 模式 | 命令 | 说明 |
+|---|---|---|
+| 快捷替换 | `--bgm bgm/xxx.mp3` | 直接用 BGM 替换原声 |
+| 配置混合 | `--bgm-cfg bgm.yaml` | 按配置保留/混合原声，控制音量比例 |
 
 ### 剪辑需求示例
 
