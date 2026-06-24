@@ -107,6 +107,12 @@ python main.py edit "火山片段" -o highlights.mp4 --bgm bgm/summer.mp3
 
 # 使用 BGM 配置文件（高级模式：音量混合、保留原声等）
 python main.py edit "火山片段" --bgm-cfg bgm.yaml
+
+# 应用 LUT 调色滤镜
+python main.py edit "火山片段" --lut luts/cinematic.cube
+
+# LUT + BGM 组合
+python main.py edit "火山片段" --lut luts/cinematic.cube --bgm-cfg bgm.yaml
 ```
 
 ### 背景音乐配置（`--bgm-cfg`）
@@ -130,6 +136,23 @@ bgm_path: "bgm/summer.mp3"
 |---|---|---|
 | 快捷替换 | `--bgm bgm/xxx.mp3` | 直接用 BGM 替换原声 |
 | 配置混合 | `--bgm-cfg bgm.yaml` | 按配置保留/混合原声，控制音量比例 |
+
+### LUT 调色滤镜（`--lut`）
+
+在裁切阶段应用 `.cube` 格式的 LUT 文件，支持设置强度：
+
+```bash
+# 完整应用 LUT
+python main.py edit "火山片段" --lut luts/cinematic.cube
+
+# 指定强度（0.7 = 70% 效果）
+python main.py edit "火山片段" --lut luts/cinematic.cube --lut-strength 0.7
+```
+
+| 参数 | 说明 | 默认值 |
+|---|---|---|
+| `--lut` | LUT 文件路径（`.cube` 格式） | 不启用 |
+| `--lut-strength` | 应用强度 0.0~1.0 | 1.0（完全应用） |
 
 ### 剪辑需求示例
 

@@ -22,9 +22,11 @@ class VideoEditor:
     def edit(self, source_videos: dict[str, Path], clips: list[dict],
              output_name: str = "output.mp4",
              bgm_path: str | Path | None = None,
-             bgm_config: dict | None = None) -> Path:
+             bgm_config: dict | None = None,
+             lut_path: str | Path | None = None,
+             lut_strength: float = 1.0) -> Path:
         """
-        根据剪辑方案裁切并拼接视频片段，可选添加背景音乐。
+        根据剪辑方案裁切并拼接视频片段，可选添加背景音乐和 LUT 滤镜。
 
         Args:
             source_videos: {来源名称(stem): 视频文件路径} 映射表
@@ -32,6 +34,8 @@ class VideoEditor:
             output_name: 输出文件名
             bgm_path: 背景音乐文件路径（简单模式，直接替换原声）
             bgm_config: 背景音乐配置字典（高级模式，来自 bgm.yaml）
+            lut_path: LUT 文件路径（.cube 格式），指定后在裁切时应用
+            lut_strength: LUT 应用强度 (0.0~1.0)，1.0 为完全应用
 
         Returns:
             输出文件路径
@@ -60,7 +64,8 @@ class VideoEditor:
                     f"[dim]裁切片段 {i + 1}/{len(clips)}: "
                     f"[{source}] {format_timestamp(start)} → {format_timestamp(end)}[/dim]"
                 )
-                self._cut_segment(Path(video_path), start, end, seg_path)
+                self._cut_segment(Path(video_path), start, end, seg_path,
+                                  lut_path=lut_path, lut_strength=lut_strength)
                 segment_paths.append(seg_path)
 
             # 2. 拼接所有片段
@@ -88,21 +93,44 @@ class VideoEditor:
         console.print(f"[green]✓ 输出视频已生成: {concat_output}[/green]")
         return concat_output
 
-    def _cut_segment(self, video_path: Path, start: float, end: float, output: Path) -> None:
-        """裁切单个片段"""
+    def _cut_segment(self, video_path: Path, start: float, end: float, output: Path,
+                     lut_path: str | Path | None = None,
+                     lut_strength: float = 1.0) -> None:
+        """裁切单个片段，可选应用 LUT 滤镜"""
         duration = end - start
+
+        # 构造视频滤镜
+        vf_filters = []
+        if lut_path:
+            lut_path = Path(lut_path)
+            if lut_path.exists():
+                lut_str = f"lut3d='{lut_path}'"
+                if lut_strength < 1.0:
+                    lut_str += f":strength={lut_strength}"
+                vf_filters.append(lut_str)
+                console.print(f"[dim]  LUT: {lut_path.name} (strength={lut_strength})[/dim]")
+            else:
+                console.print(f"[yellow]  LUT 文件不存在: {lut_path}，跳过 LUT[/yellow]")
+
         cmd = [
             "ffmpeg",
             "-ss", f"{start:.3f}",       # 起始时间
             "-i", str(video_path),
             "-t", f"{duration:.3f}",     # 持续时长
+        ]
+
+        # 有 LUT 时需要重编码视频（不能用 copy）
+        if vf_filters:
+            cmd.extend(["-vf", ",".join(vf_filters)])
+
+        cmd.extend([
             "-c:v", self.config.video_codec,
             "-crf", str(self.config.crf),
             "-preset", self.config.preset,
             "-c:a", "aac",
             "-avoid_negative_ts", "make_zero",
             "-y", str(output),
-        ]
+        ])
         result = subprocess.run(cmd, capture_output=True, text=True)
         if result.returncode != 0:
             raise RuntimeError(

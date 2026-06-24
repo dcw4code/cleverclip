@@ -85,7 +85,8 @@ async def run_analyze(cfg: Config) -> None:
 
 
 async def run_edit(cfg: Config, timeline_dir: str | None, requirement: str, output: str,
-                   bgm: str | None, bgm_cfg: str | None) -> Path:
+                   bgm: str | None, bgm_cfg: str | None,
+                   lut: str | None, lut_strength: float) -> Path:
     """执行剪辑流程"""
     # Step 1: 确保有时间轴数据
     if timeline_dir:
@@ -165,7 +166,8 @@ async def run_edit(cfg: Config, timeline_dir: str | None, requirement: str, outp
             bgm_config = yaml.safe_load(f) or {}
         console.print(f"[cyan]已加载 BGM 配置: {bgm_cfg}[/cyan]")
 
-    result_path = editor.edit(source_map, all_clips, bgm_path=bgm, bgm_config=bgm_config)
+    result_path = editor.edit(source_map, all_clips, bgm_path=bgm, bgm_config=bgm_config,
+                              lut_path=lut, lut_strength=lut_strength)
 
     # 如果指定了输出文件名，重命名
     if output != "output.mp4":
@@ -203,7 +205,10 @@ def analyze(config: str):
 @click.option("--timeline-dir", "-t", default=None, help="使用已有时间轴的目录（含 timeline_*.json），跳过分析步骤")
 @click.option("--bgm", default=None, help="背景音乐文件路径，快捷模式直接替换原声（如 bgm/summer.mp3）")
 @click.option("--bgm-cfg", default=None, help="BGM 配置文件路径，支持音量混合等高级选项（如 bgm.yaml）")
-def edit(requirement: str, config: str, output: str, timeline_dir: str, bgm: str, bgm_cfg: str):
+@click.option("--lut", default=None, help="LUT 文件路径，指定后在裁切时应用调色滤镜（如 luts/cinematic.cube）")
+@click.option("--lut-strength", default=1.0, type=float, help="LUT 应用强度 0.0~1.0，默认 1.0（完全应用）")
+def edit(requirement: str, config: str, output: str, timeline_dir: str, bgm: str, bgm_cfg: str,
+         lut: str, lut_strength: float):
     """根据自然语言需求剪辑视频（输入源为 source_clips/ 下的所有 .mp4）
 
     \b
@@ -213,6 +218,8 @@ def edit(requirement: str, config: str, output: str, timeline_dir: str, bgm: str
       python main.py edit "精彩集锦" -t temp/
       python main.py edit "火山片段" --bgm bgm/summer.mp3
       python main.py edit "火山片段" --bgm-cfg bgm.yaml
+      python main.py edit "火山片段" --lut luts/cinematic.cube
+      python main.py edit "火山片段" --lut luts/cinematic.cube --lut-strength 0.7
     """
     console.print(Panel.fit("[bold cyan]CleverClip —— AI 视频自动剪辑[/bold cyan]"))
 
@@ -221,7 +228,8 @@ def edit(requirement: str, config: str, output: str, timeline_dir: str, bgm: str
         sys.exit(1)
 
     cfg = Config(config)
-    result_path = asyncio.run(run_edit(cfg, timeline_dir, requirement, output, bgm, bgm_cfg))
+    result_path = asyncio.run(run_edit(cfg, timeline_dir, requirement, output, bgm, bgm_cfg,
+                                       lut, lut_strength))
 
     console.print(f"\n[bold green]🎉 剪辑完成！输出文件: {result_path}[/bold green]")
 
